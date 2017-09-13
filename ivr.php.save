@@ -29,7 +29,7 @@ switch($dtmfDigits){
     $response  = '<?xml version="1.0" encoding="UTF-8"?>';
     $response .= '<Response>';
     $response .= '<Say>Please hold while we connect you to Sales.</Say>';
-    $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
+    $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/media/sautisol.mp3"/>';
     $response .= '</Dial>';
     $response .= '</Response>';
 
@@ -43,7 +43,7 @@ switch($dtmfDigits){
         $response  = '<?xml version="1.0" encoding="UTF-8"?>';
         $response .= '<Response>';
         $response .= '<Say>Please hold while we connect you to Support.</Say>';
-        $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
+        $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/media/sautisol.mp3"/>';
         $response .= '</Dial>';
         $response .= '</Response>';
     
@@ -56,7 +56,7 @@ switch($dtmfDigits){
         // Talk listen again... Compose the response
         $response  = '<?xml version="1.0" encoding="UTF-8"?>';
         $response .= '<Response>';
-        $response .= '<Redirect>http://173.212.225.164:8010/voice/pick.php</Redirect>';
+        $response .= '<Redirect>http://173.212.225.164:8010/pick.php</Redirect>';
         $response .= '</Response>';
 
         // Print the response onto the page so that our gateway can read it
@@ -69,7 +69,7 @@ switch($dtmfDigits){
         $response  = '<?xml version="1.0" encoding="UTF-8"?>';
         $response .= '<Response>';
         $response .= '<Say>Please hold while we connect you to Support.</Say>';
-        $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
+        $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://localhost:8010/media/sautisol.mp3"/>';
         $response .= '</Dial>';
         $response .= '</Response>';
     

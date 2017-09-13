@@ -4,7 +4,7 @@ require_once('AfricasTalkingGateway.php');
 $username   = "WeloveNerds";
 $apikey     = "34916511ccfe864b9aed8cb41758c5c87638daf3867148dea6c951a38e2ff126";
 
-$from = "+254711082303";
+$from = "+254711082880";
 //call to db
 $to   = "+254708415904,+254732730473";
 
