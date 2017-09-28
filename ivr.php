@@ -16,7 +16,8 @@ $amount  = $_POST['amount'];
 require_once('AfricasTalkingGateway.php');
 $username   = "WeloveNerds";
 $apikey     = "34916511ccfe864b9aed8cb41758c5c87638daf3867148dea6c951a38e2ff126";
-$from = "+254711082303";
+$from = "+254711082880";
+
 //call to db
 $to   = "+254708415904,+254732730473";
 // Create a new instance of our awesome gateway class
@@ -30,7 +31,6 @@ switch($dtmfDigits){
     $response .= '<Response>';
     $response .= '<Say>Please hold while we connect you to Sales.</Say>';
     $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
-    $response .= '</Dial>';
     $response .= '</Response>';
 
     // Print the response onto the page so that our gateway can read it
@@ -44,7 +44,6 @@ switch($dtmfDigits){
         $response .= '<Response>';
         $response .= '<Say>Please hold while we connect you to Support.</Say>';
         $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
-        $response .= '</Dial>';
         $response .= '</Response>';
     
         // Print the response onto the page so that our gateway can read it
@@ -70,7 +69,6 @@ switch($dtmfDigits){
         $response .= '<Response>';
         $response .= '<Say>Please hold while we connect you to Support.</Say>';
         $response .= '<Dial sequential="true" phoneNumbers="880.welovenerds@ke.sip.africastalking.com,+254787235065" ringbackTone="http://173.212.225.164:8010/voice/media/sautisol.mp3"/>';
-        $response .= '</Dial>';
         $response .= '</Response>';
     
         // Print the response onto the page so that our gateway can read it
